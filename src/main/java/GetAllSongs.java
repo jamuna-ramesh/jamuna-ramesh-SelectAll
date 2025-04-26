@@ -1,6 +1,6 @@
 
 import Util.ConnectionUtil;
-import Util.FileUtil;
+//import Util.FileUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -34,7 +34,8 @@ public class GetAllSongs {
      */
     public List<Song> problem1(){
 //        write your SQL logic in a single line in the problem1.sql file.
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+       // String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "SELECT * FROM Song ";
 
 
         List<Song> songs = new ArrayList<>();
